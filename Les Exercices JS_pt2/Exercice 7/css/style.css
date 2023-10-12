@@ -1,0 +1,9 @@
+      /* CSS pour la bordure verte */
+      .match {
+         border: 2px solid green;
+      }
+
+      /* CSS pour la bordure rouge */
+      .mismatch {
+         border: 2px solid red;
+      }

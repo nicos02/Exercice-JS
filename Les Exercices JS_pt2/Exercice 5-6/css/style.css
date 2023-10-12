@@ -1,0 +1,13 @@
+.hidden {
+   display: none;
+}
+
+p {
+   text-align: center;
+   line-height: 25px;
+   font-size: 1.2rem;
+}
+
+.color-text {
+   color: #e63946;
+}

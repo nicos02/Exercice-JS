@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercice 6</title>
+</head>
+<body>
+   <h1>Exercice 6</h1>
+   <form>
+      <label for="age">Âge :</label>
+      <input type="number" id="age" name="age" required>
+      <button type="submit">Soumettre</button>
+   </form>
+
+   <script>
+      // Code JavaScript pour afficher l'alerte en fonction de l'âge renseigné
+      // document.querySelector est une méthode JavaScript qui permet de sélectionner un élément dans le document HTML
+      document.querySelector('form').addEventListener('submit', function(event) {
+         // event.preventDefault() est une méthode JavaScript qui permet d'empêcher le comportement par défaut d'un événement.
+         event.preventDefault();
+
+         // Récupération de l'âge
+         // parseInt() convertit la chaîne de caractère en nombre
+         var age = parseInt(document.getElementById('age').value);
+         
+         if (age >= 18) {
+            alert('Vous êtes majeur');
+         } else {
+            alert('Vous êtes mineur');
+         }
+      });
+   </script>
+</body>
+</html>

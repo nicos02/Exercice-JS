@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercice 5</title>
+</head>
+<body>
+   <form>
+      <input type="text" id="num1" placeholder="Nombre 1">
+      +
+      <input type="text" id="num2" placeholder="Nombre 2">
+      <button type="button" onclick="result()">Additionner</button>
+   </form>
+
+   <script>
+      function result() {
+         var num1 = document.getElementById("num1").value;
+         var num2 = document.getElementById("num2").value;
+
+         // Vérifier si les champs sont des nombres et s'ils ne sont pas vide
+         // La fonction isNaN() est utilisée pour vérifier si une valeur n'est pas un nombre. Elle renvoie true si la valeur n'est pas un nombre et false si elle est un nombre.
+         if (num1 === "" || num2 === "" || isNaN(num1) || isNaN(num2)) {
+            alert("Veuillez entrer des nombres valides dans les deux champs.");
+         } else {
+            // parseFloat est une fonction JavaScript qui permet de convertir une chaîne de caractères en un nombre à virgule flottante (float). Elle analyse la chaîne de caractères fournie et retourne la valeur numérique correspondante.
+            var sum = parseFloat(num1) + parseFloat(num2);
+            alert("Le résultat de l'addition est : " + sum);
+         }
+      }
+   </script>
+</body>
+</html>
