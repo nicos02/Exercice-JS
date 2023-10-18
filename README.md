@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/nicos02/Exercices-et-TP-JQuery/assets/135131275/ad3dbbfb-2295-4619-8a2d-27496bd647c1">
+</p>
+
 # EXERCICE JAVASCRIPT - PARTIE 1
 
 Ce dépôt contient une série d'exercices HTML et JavaScript pour pratiquer et se familiariser avec ces langages de programmation.
